@@ -1,3 +1,4 @@
+import Reactivefy from 'reactivefy'
 const { Subscription  } = Reactivefy;
 
 export class Immersible {
