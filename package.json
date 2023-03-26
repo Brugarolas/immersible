@@ -7,7 +7,7 @@
     "test": "mocha"
   },
   "dependencies": {
-    "reactivefy": "^1.2.1"
+    "reactivefy": "^1.2.4"
   },
   "devDependencies": {
     "@babel/cli": "^7.21.0",
