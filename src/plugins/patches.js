@@ -42,7 +42,7 @@ export function enablePatches() {
 		}
 	}
 
-  function generateArrayPatches(state:, basePath, patches, inversePatches) {
+  function generateArrayPatches(state, basePath, patches, inversePatches) {
     let {base_, assigned_} = state
     let copy_ = state.copy_
 

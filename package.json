@@ -1,17 +1,37 @@
 {
   "name": "immersible",
   "version": "0.1.0",
-  "description": "",
-  "main": "index.js",
-  "dependencies": {
-
-  },
-  "devDependencies": {
-    "mocha": "^10.2.0"
-  },
+  "description": "My own version of Immer with some differences",
+  "main": "dist/index.js",
   "scripts": {
     "test": "mocha"
   },
+  "dependencies": {
+    "reactivefy": "^1.2.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.3",
+    "@babel/eslint-parser": "^7.21.3",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/register": "^7.21.0",
+    "babel-preset-minify": "^0.5.2",
+    "chai": "^4.3.7",
+    "eslint": "^8.36.0",
+    "eslint-config-canonical": "^41.0.1",
+    "mocha": "^10.2.0",
+    "npm-check-updates": "^16.7.13",
+    "rimraf": "^4.4.0"
+  },
   "author": "andres-brugarolas",
-  "license": "GNU v3"
+  "license": "GNU v3",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/beugarolas/immersible.git"
+  },
+  "keywords": [
+    "immutable",
+    "mutable",
+    "copy-on-write"
+  ]
 }

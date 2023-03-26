@@ -1,10 +1,4 @@
-import {
-	IProduce,
-	IProduceWithPatches,
-	Immer,
-	Draft,
-	Immutable
-} from './internal'
+import { Immer } from './internal'
 
 export {
 	Draft,
@@ -47,9 +41,7 @@ export const produce = immer.produce
  * Like `produce`, but `produceWithPatches` always returns a tuple
  * [nextState, patches, inversePatches] (instead of just the next state)
  */
-export const produceWithPatches = immer.produceWithPatches.bind(
-	immer
-)
+export const produceWithPatches = immer.produceWithPatches.bind(immer)
 
 /**
  * Pass true to automatically freeze all copies created by Immer.
