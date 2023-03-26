@@ -1,0 +1,17 @@
+{
+  "name": "immersible",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "mocha": "^10.2.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "andres-brugarolas",
+  "license": "GNU v3"
+}
