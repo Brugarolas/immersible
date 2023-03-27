@@ -38,7 +38,7 @@ todo.produce((draft) => {
 })
 ```
 
-We can access baseState or, if mutated, next stated way simple:
+We can access baseState or, if mutated, nextState way simple:
 ```js
 console.log(todo.state)
 ```
