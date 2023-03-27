@@ -12,7 +12,7 @@ import {
 	die,
 	revokeScope,
 	isFrozen
-} from '../internal'
+} from '../internal.js'
 
 export function processResult(result, scope) {
 	scope.unfinalizedDrafts_ = scope.drafts_.length
@@ -125,7 +125,7 @@ function finalizeProperty(
 	rootPath,
 	targetIsSet
 ) {
-	if (__DEV__ && childValue === targetObject) die(5)
+	if (childValue === targetObject) die(5)
 
 	if (isDraft(childValue)) {
 		const path = rootPath && parentState &&

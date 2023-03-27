@@ -8,7 +8,7 @@ import {
 	markChanged,
 	die,
 	ArchType
-} from '../internal'
+} from '../internal.js'
 
 class DraftMap extends Map {
 	  [DRAFT_STATE]

@@ -1,4 +1,4 @@
-import {die} from '../internal'
+import {die} from '../internal.js'
 
 /** Plugin utilities */
 const plugins = {}

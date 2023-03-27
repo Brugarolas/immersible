@@ -18,13 +18,13 @@ import {
 	current,
 	proxyMap,
 	proxySet
-} from '../internal'
+} from '../internal.js'
 
 export class Immer {
 	autoFreeze_ = true
 	useStrictShallowCopy_ = false
 
-	constructor(config = { autoFreeze, useStrictShallowCopy }) {
+	constructor(config = { autoFreeze: true, useStrictShallowCopy: false }) {
 		if (typeof config?.autoFreeze === 'boolean')
 			this.setAutoFreeze(config.autoFreeze)
 		if (typeof config?.useStrictShallowCopy === 'boolean')
@@ -58,11 +58,11 @@ export class Immer {
 
 			const self = this
 			return function curriedProduce(
-				this,
+				self,
 				base = defaultBase,
 				...args
 			) {
-				return self.produce(base, (draft) => recipe.call(this, draft, ...args))
+				return self.produce(base, (draft) => recipe.call(self, draft, ...args))
 			}
 		}
 

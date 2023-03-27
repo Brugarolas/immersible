@@ -3,7 +3,7 @@ import {
 	DRAFTABLE,
 	ArchType,
 	die
-} from '../internal'
+} from '../internal.js'
 
 /** Returns true if the given value is an Immer draft */
 export function isDraft (value) {
@@ -165,7 +165,7 @@ export function shallowCopy(base, strict) {
 export function freeze(obj, deep = false) {
 	if (isFrozen(obj) || isDraft(obj) || !isDraftable(obj)) return obj
 	if (getArchtype(obj) > 1 /* Map or Set */) {
-		obj.set = obj.add = obj.clear = obj.delete = dontMutateFrozenCollections as any
+		obj.set = obj.add = obj.clear = obj.delete = dontMutateFrozenCollections;
 	}
 	Object.freeze(obj)
 	if (deep) each(obj, (_key, value) => freeze(value, true), true)

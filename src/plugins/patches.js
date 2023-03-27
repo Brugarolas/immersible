@@ -1,4 +1,4 @@
-import {immerable} from '../immer'
+import {immerable} from '../index.js'
 import {
 	get,
 	each,
@@ -12,7 +12,7 @@ import {
 	isDraft,
 	isDraftable,
 	NOTHING
-} from '../internal'
+} from '../internal.js'
 
 export function enablePatches() {
 	const errorOffset = 16

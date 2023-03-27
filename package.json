@@ -1,12 +1,20 @@
 {
   "name": "immersible",
-  "version": "0.1.0",
-  "description": "My own version of Immer with some differences",
+  "version": "1.0.0",
+  "description": "My own version of Immer with a more convenient API",
   "main": "dist/index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha ./test --require @babel/register",
+    "lint": "eslint ./src ./test",
+    "lint:fix": "eslint --fix ./src ./test",
+    "clean": "rimraf ./dist",
+    "build": "npm run clean && babel ./src --out-dir ./dist --copy-files",
+    "utils:outdated": "npm outdated",
+    "utils:updates": "ncu",
+    "utils:upgrades": "ncu -u"
   },
   "dependencies": {
+    "@babel/runtime-corejs3": "^7.21.0",
     "reactivefy": "^1.2.4"
   },
   "devDependencies": {
@@ -23,13 +31,26 @@
     "npm-check-updates": "^16.7.13",
     "rimraf": "^4.4.0"
   },
+  "browserslist": [
+    ">0.25%",
+    "not dead",
+    "not IE > 5",
+    "not android < 5"
+  ],
   "author": "andres-brugarolas",
   "license": "GNU v3",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/beugarolas/immersible.git"
   },
+  "bugs": {
+    "url": "https://github.com/beugarolas/immersible/issues"
+  },
+  "homepage": "https://github.com/beugarolas/immersible#readme",
   "keywords": [
+    "javascript",
+    "immer",
     "immutable",
     "mutable",
     "copy-on-write"

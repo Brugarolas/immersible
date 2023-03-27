@@ -10,7 +10,7 @@ import {
 	die,
 	createProxy,
 	ArchType
-} from '../internal'
+} from '../internal.js'
 
 /**
  * Returns a new draft of the `base` object.
@@ -228,11 +228,11 @@ function readPropFromProto (state, source, prop) {
 
   // This is a very special case, if the prop is a getter defined by the
 	// prototype, we should invoke it with the draft as context!
-	return desc.includes('value') ? desc.value : desc.get?.call(state.draft_)
+	return `value` in desc ? desc.value : desc.get?.call(state.draft_)
 }
 
 function getDescriptorFromProto (source, prop) {
-	if (!source.includes(prop)) {
+	if (!(prop in source)) {
     return undefined
   }
 

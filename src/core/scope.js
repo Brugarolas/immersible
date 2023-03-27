@@ -2,7 +2,7 @@ import {
 	DRAFT_STATE,
 	ArchType,
 	getPlugin
-} from '../internal'
+} from '../internal.js'
 
 /** Each scope represents a `produce` call. */
 let currentScope

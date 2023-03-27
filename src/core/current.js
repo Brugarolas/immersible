@@ -9,7 +9,7 @@ import {
 	isDraftable,
 	getArchtype,
   isFrozen
-} from '../internal'
+} from '../internal.js'
 
 /** Takes a snapshot of the current state of a draft and finalizes it (but without freezing). This is a great utility to print the current state during debugging (no Proxies in the way). The output of current can also be safely leaked outside the producer. */
 export function current(value) {
