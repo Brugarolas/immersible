@@ -1,6 +1,6 @@
 {
   "name": "immersible",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "My own version of Immer with a more convenient API",
   "main": "dist/index.js",
   "scripts": {
@@ -42,12 +42,12 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "https://github.com/beugarolas/immersible.git"
+    "url": "https://github.com/brugarolas/immersible.git"
   },
   "bugs": {
-    "url": "https://github.com/beugarolas/immersible/issues"
+    "url": "https://github.com/brugarolas/immersible/issues"
   },
-  "homepage": "https://github.com/beugarolas/immersible#readme",
+  "homepage": "https://github.com/brugarolas/immersible#readme",
   "keywords": [
     "javascript",
     "immer",
