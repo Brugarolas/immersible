@@ -152,7 +152,9 @@ export const objectTraps = {
 			delete state.assigned_[prop]
 		}
 
-		delete state.copy_[prop]
+    if (state.copy_) {
+			delete state.copy_[prop]
+		}
 
 		return true
 	},

@@ -1,6 +1,6 @@
 {
   "name": "immersible",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "My own version of Immer with a more convenient API",
   "main": "dist/index.js",
   "files": [
@@ -34,17 +34,17 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.21.0",
-    "@babel/core": "^7.21.3",
+    "@babel/core": "^7.21.4",
     "@babel/eslint-parser": "^7.21.3",
-    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-env": "^7.21.4",
     "@babel/register": "^7.21.0",
     "babel-preset-minify": "^0.5.2",
     "chai": "^4.3.7",
-    "eslint": "^8.36.0",
+    "eslint": "^8.38.0",
     "eslint-config-canonical": "^41.0.1",
     "mocha": "^10.2.0",
-    "npm-check-updates": "^16.7.13",
-    "rimraf": "^4.4.0"
+    "npm-check-updates": "^16.10.8",
+    "rimraf": "^5.0.0"
   },
   "browserslist": [
     ">0.25%",
